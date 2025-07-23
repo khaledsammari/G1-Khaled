@@ -32,6 +32,15 @@ target_link_libraries(g1_kungfu unitree_sdk2)
 add_executable (g1_jabs_punch low_level/jabs_punch.cpp)
 target_link_libraries(g1_jabs_punch unitree_sdk2)
 
+add_executable (garde low_level/garde.cpp)
+target_link_libraries (garde unitree_sdk2)
+
+add_executable (garde2 low_level/garde2.cpp)
+target_link_libraries (garde2 unitree_sdk2)
+
+add_executable (frontkick2 low_level/g1_frontkick2.cpp)
+target_link_libraries (frontkick2 unitree_sdk2)
+
 find_package(yaml-cpp QUIET)
 if(yaml-cpp_FOUND)
     if (${yaml-cpp_VERSION} VERSION_GREATER_EQUAL "0.6")
