@@ -20,6 +20,17 @@ target_link_libraries(g1_audio_client_example unitree_sdk2)
 add_executable(g1_dex3_example dex3/g1_dex3_example.cpp)
 target_link_libraries(g1_dex3_example unitree_sdk2)
 
+add_executable(g1_back_kick low_level/back_kick.cpp)
+target_link_libraries(g1_back_kick unitree_sdk2)
+
+add_executable(g1_front_kick low_level/front_kick.cpp)
+target_link_libraries(g1_front_kick unitree_sdk2)
+
+add_executable(g1_kungfu low_level/g1_kungfu.cpp)
+target_link_libraries(g1_kungfu unitree_sdk2)
+
+add_executable (g1_jabs_punch low_level/jabs_punch.cpp)
+target_link_libraries(g1_jabs_punch unitree_sdk2)
 
 find_package(yaml-cpp QUIET)
 if(yaml-cpp_FOUND)
