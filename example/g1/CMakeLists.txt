@@ -20,6 +20,9 @@ target_link_libraries(g1_audio_client_example unitree_sdk2)
 add_executable(g1_dex3_example dex3/g1_dex3_example.cpp)
 target_link_libraries(g1_dex3_example unitree_sdk2)
 
+add_executable(front_optimized low_level/front_optimized.cpp)
+target_link_libraries(front_optimized unitree_sdk2)
+
 add_executable(g1_back_kick low_level/back_kick.cpp)
 target_link_libraries(g1_back_kick unitree_sdk2)
 
